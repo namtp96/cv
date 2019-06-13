@@ -1,0 +1,23 @@
+.container img {
+    transform: scale(1.1);
+}
+.container {
+    padding: 0 20px 40px;
+}
+.container p {
+    text-align: center;
+    margin: 2rem 0 0;
+}
+.container p a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(104, 182, 156);
+    border-radius: 3px;
+    border: 2px solid rgba(104, 182, 156, .8);
+}
+.headding {
+    margin: 3rem 0;
+}
+ul {
+    padding: 0 2rem;
+}

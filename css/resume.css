@@ -1,29 +1,6 @@
 .box {
     padding: 40px 10px 10px;
 }
-.headding {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 500;
-    margin: 0 0 1rem;
-    font-size: 40px;
-    padding: 0 0 10px 0;
-}
-.headding::after,
-.headding::before {
-    content: '';
-    background-color: rgb(104, 182, 156);
-    width: 0%;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    top: 100%;
-}
-.headding::before {
-    width: 110%;
-    background-color: rgb(48, 55, 64);
-}
 div:hover > .headding::after {
     width: 110%;
     transition: all 0.33s;

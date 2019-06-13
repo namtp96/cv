@@ -14,7 +14,7 @@ h2 {
     line-height: 50px;
     margin: 0 0 50px;
     padding: 0 20px 0 0;
-    border-bottom: 1px solid rgb(104, 182, 156, .9);
+    border-bottom: 1px solid rgba(104, 182, 156, .9);
     display: inline-block;
 }
 .content {
