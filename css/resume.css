@@ -1,0 +1,141 @@
+.box {
+    padding: 40px 10px 10px;
+}
+.headding {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 0 1rem;
+    font-size: 40px;
+    padding: 0 0 10px 0;
+}
+.headding::after,
+.headding::before {
+    content: '';
+    background-color: rgb(104, 182, 156);
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.headding::before {
+    width: 110%;
+    background-color: rgb(48, 55, 64);
+}
+div:hover > .headding::after {
+    width: 110%;
+    transition: all 0.33s;
+}
+.box .item .text, .time {
+    font-weight: 200;
+    font-style: italic;
+}
+.item-headding {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 .5rem;
+}
+.headding i {
+    margin: 0 20px 0 0;
+    color: rgb(104, 182, 156);
+}
+.time {
+    color: rgb(48, 55, 64);
+    font-size: 14px;
+}
+.location {
+    color: rgba(48, 55, 64, .8);
+    font-weight: 500;
+    margin: 0 0 .5rem;
+}
+.item ul {
+    padding: 0 0 0 3rem;
+}
+.box .item .text {
+    line-height: 25px;
+    list-style-type: disc;
+    font-size: 15px;
+    font-weight: 300;  
+}
+.box .item {
+    border-bottom: 1px solid rgba(48, 55, 64, .3);
+    padding: 0 0 1rem;
+    margin: 0 0 1rem;
+}
+#skill ul {
+    padding: 20px 10px;
+}
+#skill li {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+    position: relative;
+}
+#skill li::after,
+#skill li::before {
+    content: '';
+    background-color: rgb(104, 182, 156);
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+#skill li::before {
+    background-color: rgba(48, 55, 64, .3);
+}
+#skill li:nth-child(1)::after {
+    width: 60%;
+}
+#skill li:nth-child(2)::after {
+    width: 50%;
+}
+#skill li:nth-child(3)::after {
+    width: 50%;
+}
+#skill li:nth-child(4)::after {
+    width: 70%;
+}
+#skill li:nth-child(5)::after {
+    width: 45%;
+}
+#skill li:nth-child(6)::after {
+    width: 85%;
+}
+#skill li:nth-child(7)::after {
+    width: 45%;
+}
+#interests-box {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 25px auto 0;
+}
+#interests-box li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255,255,255);
+    border-right: 1px solid rgb(255,255,255);
+}
+#interests-box li span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    overflow: hidden;
+    color: #ffffff;
+    font-weight: 500;
+}
+#interests-box li.last {
+    border-bottom: none;
+}
+#interests-box li:nth-child(3n) {
+    border-right: none;
+}
