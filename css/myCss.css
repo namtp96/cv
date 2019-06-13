@@ -107,6 +107,9 @@ footer {
     font-size: 20px;
     font-weight: 300;
 }
+.social.container p a {
+    text-decoration: underline;
+}
 .headding {
     position: relative;
     display: inline-block;
